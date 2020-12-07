@@ -1,0 +1,17 @@
+{
+  "name": "bookmark",
+  "version": "1.0.0",
+  "description": "book mark page master - Front end mentor coding challenge",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JDFIREX",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.1.14",
+    "tailwindcss": "^2.0.1"
+  }
+}
