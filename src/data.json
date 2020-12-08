@@ -1,0 +1,101 @@
+{
+    "Nav" : {
+        "nav_logo" : "images/logo-bookmark.svg",
+        "nav_humb" : "images/hamburger.svg",
+        "nav_header" : "BOOKMARK",
+        "nav_info" : ["FEATURES","PRICING","CONTACT","LOGIN"]
+    },
+    "Header" : {
+        "header_welcom" : "A Simple Bookmark Manager",
+        "header_p" : "A clean and simple interface to organize your favourite websites. Open anew browser tab and see your sites load instantly. Try it for free.",
+        "header_btn_Chrome" : "Get it on Chrome",
+        "header_btn_Firefox" : "Get it on Firefox",
+        "header_img" : "images/illustration-hero.svg"
+    },
+    "Features" : {
+        "Features_header" : "Featrues",
+        "Features_p" : "Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.",
+        "Features_Simple_Bookmarking" : {
+            "Bookmargkin_tittle" : "Simple Bookmarking",
+            "Bookmarking_header" : "Bookmark in one click",
+            "Bookmarking_p" : "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
+            "Bookmarking_btn" : "More info",
+            "Bookmarking_img" : "images/illustration-features-tab-1.svg"
+        },
+        "Features_Speedy_Searching" : {
+            "Searching_tittle" : "Speedy Searching",
+            "Searching_header" : "Intelligent search",
+            "Searching_p" : "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
+            "Searching_btn" : "More info",
+            "Searching_img" : "images/illustration-features-tab-2.svg"
+        },
+        "Features_Easy_Sharing" : {
+            "Sharing_tittle" : "Easy Sharing",
+            "Sharing_header" : "Share your bookmarks",
+            "Sharing_p" : "Easily share your bookmarks and collections with other.Create a shareable link that you can send at the click of a button.",
+            "Sharing_btn" : "More info",
+            "Sharing_img" : "images/illustration-features-tab-3.svg"
+        }
+    },
+    "Download" : {
+        "Download_header" : "Download the extension",
+        "Download_p" : "We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd liek us to prioritize.",
+        "Download_Chrome" : {
+            "Chrome_header" : "Add to Chrome",
+            "Chrome_p" : "Minimum version 62",
+            "Chrome_btn" : "Add & Install Extension",
+            "Chrome_img" : "images/logo-chrome.svg",
+            "Chrome_dot" : "images/bg-dots.svg"
+        },
+        "Download_Firefox" : {
+            "Firefox_header" : "Add to Firefox",
+            "Firefox_p" : "Minimum version 55",
+            "Firefox_btn" : "Add & Install Extension",
+            "Firefox_img" : "images/logo-firefox.svg",
+            "Firefox_dot" : "images/bg-dots.svg"
+        },
+        "Download_Opera" : {
+            "Opera_header" : "Add to Opera",
+            "Opera_p" : "Minimum version 46",
+            "Opera_btn" : "Add & Install Extension",
+            "Opera_img" : "images/logo-opera.svg",
+            "Opera_dot" : "images/bg-dots.svg"
+        }
+    },
+    "Frequently" : {
+        "Frequently_header" : "Frequently Asked Questions",
+        "Frequently_p" : "Here are some of your FAQs. if you have any other questions you'd like answered please feel free to email us.",
+        "Frequently_ask_1" : {
+            "ask_1_header" : "What is Bookmark?",
+            "ask_1_p" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis."
+        },
+        "Frequently_ask_2" : {
+            "ask_2_header" : "How can i request a new browser?",
+            "ask_2_p" : "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet."
+        },
+        "Frequently_ask_3" : {
+            "ask_3_header" : "Is there a mobile app?",
+            "ask_3_p" : "Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum."
+        },
+        "Frequently_ask_4" : {
+            "ask_3_header" : "What about other Chromium browsers?",
+            "ask_3_p" : "Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit."
+        },
+        "Frequently_btn" : "More info"
+    },
+    "Stay" : {
+        "Stay_joined" : "35,000+ ALREADY JOINED",
+        "Stay_header" : "Stay up-to-date with what we're doing",
+        "Stay_input" : "Enter your email address",
+        "Stay_submit" : "Contact Us"
+    },
+    "Footer" : {
+        "Footer_header" : "BOOKMARK",
+        "Footer_img" : "images/logo-bookmark.svg",
+        "Footer_info" : ["FEATURES","PRICING","CONTACT"],
+        "Footer_media" : {
+            "media_fb" : "images/icon-facebook.svg",
+            "media_tt" : "images/icon-twitter.svg"
+        }
+    }
+}

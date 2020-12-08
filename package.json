@@ -1,15 +1,18 @@
 {
-  "name": "bookmark",
+  "name": "bookmark-landing-page",
   "version": "1.0.0",
-  "description": "book mark page master - Front end mentor coding challenge",
+  "description": "book mark page master - Frontend mentor coding challenge",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JDFIREX",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "autoprefixer": "^10.0.4",
+    "babel": "^6.23.0",
+    "esm": "^3.2.25",
     "node-sass": "^5.0.0",
     "postcss": "^8.1.14",
     "tailwindcss": "^2.0.1"
