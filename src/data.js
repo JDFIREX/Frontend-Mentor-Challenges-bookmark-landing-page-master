@@ -11,14 +11,22 @@ class GetData {
     async Header(){
         return await this.data.then(r => r.Header);
     }
+    async Features(){
+        return await this.data.then(r => r.Features);
+    }
+    async Download(){
+        return await this.data.then(r => r.Download);
+    }
+    async Frequently(){
+        return await this.data.then(r => r.Frequently);
+    }
 }
 
 export let NavJSON = new GetData().Nav()
 
 export let HeaderJSON = new GetData().Header()
-// export let HeaderJSON = {};
-// export let FeaturesJSON = {};
-// export let DownloadJSON = {};
-// export let FrequentlyJSON = {};
+export let FeaturesJSON = new GetData().Features()
+export let DownloadJSON = new GetData().Download()
+export let FrequentlyJSON = new GetData().Frequently()
 // export let StayJSON = {};
 // export let FooterJSON = {};

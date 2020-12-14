@@ -13,10 +13,10 @@
         "header_img" : "images/illustration-hero.svg"
     },
     "Features" : {
-        "Features_header" : "Featrues",
+        "Features_header" : "Features",
         "Features_p" : "Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.",
         "Features_Simple_Bookmarking" : {
-            "Bookmargkin_tittle" : "Simple Bookmarking",
+            "Bookmarking_tittle" : "Simple Bookmarking",
             "Bookmarking_header" : "Bookmark in one click",
             "Bookmarking_p" : "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
             "Bookmarking_btn" : "More info",
@@ -78,8 +78,8 @@
             "ask_3_p" : "Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum."
         },
         "Frequently_ask_4" : {
-            "ask_3_header" : "What about other Chromium browsers?",
-            "ask_3_p" : "Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit."
+            "ask_4_header" : "What about other Chromium browsers?",
+            "ask_4_p" : "Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit."
         },
         "Frequently_btn" : "More info"
     },
