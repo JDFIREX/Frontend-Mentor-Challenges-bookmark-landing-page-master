@@ -4,7 +4,6 @@ let FrequentlyDIV = document.createElement("div");
     FrequentlyDIV.classList.add("Frequently")
 
 FrequentlyJSON.then(r => {
-    console.log(r)
     FrequentlyDIV.innerHTML = `
         <h1>${r.Frequently_header}</h1>
         <p>${r.Frequently_p}</p>

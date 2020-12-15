@@ -20,6 +20,9 @@ class GetData {
     async Frequently(){
         return await this.data.then(r => r.Frequently);
     }
+    async Stay(){
+        return await this.data.then(r => r.Stay);
+    }
 }
 
 export let NavJSON = new GetData().Nav()
@@ -28,5 +31,5 @@ export let HeaderJSON = new GetData().Header()
 export let FeaturesJSON = new GetData().Features()
 export let DownloadJSON = new GetData().Download()
 export let FrequentlyJSON = new GetData().Frequently()
-// export let StayJSON = {};
+export let StayJSON = new GetData().Stay()
 // export let FooterJSON = {};

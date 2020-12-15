@@ -572,74 +572,85 @@ body{
     }
 }
 @media only screen and (max-width: 750px){
-    .Frequently{
-        width:100%;
-        h1{
-            font-size: 5vw;
-            color:hsl(229, 31%, 21%);
-        }
+    .Frequently{width:100%;
+        h1{font-size: 5vw;color:hsl(229, 31%, 21%);}
         p{line-height: 6vw;font-size: 3.5vw; width: 80%;}
-        .Frequently_list{
-            width:80%;
-    
+        .Frequently_list{width:80%;
             .Frequently_item{
-                details{
-                    width:100%;
-                    summary{
-                        width:80vw;
-                        font-size: 3.5vw;
+                details{width:100%;
+                    summary{width:80vw;font-size: 3.5vw;}
+                    summary::after{right: 1vw;width:4vw; height: 2vw;background-size: 5vw 3vw;}
+                    p{line-height: 6vw;font-size: 3vw; width: 90%;}}}}
+        button{width: 25vw;height:8vw;font-size: 3vw;}}
+}
+@media only screen and (max-width: 500px){
+    .Frequently{width:100%;
+        h1{font-size: 10vw;color:hsl(229, 31%, 21%);}
+        p{line-height: 6vw;font-size: 4vw; width: 90%;}
+        .Frequently_list{width:90%;
+            .Frequently_item{
+                details{width:100%;
+                    summary{width:90vw;font-size: 4.5vw;}
+                    summary::after{right: 1vw;width:5vw; height: 3vw;background-size: 5vw 3vw;}
+                    p{line-height: 6vw;font-size: 4vw; width: 90%;}}}}
+        button{width: 35vw;height:13vw;font-size: 4vw;}}
+}
+
+.Stay{
+    margin-top: 9.5rem;
+    padding:4rem 0;
+    width:100%;
+    color:white;
+    background-color: hsl(231, 69%, 60%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
-                    }
-                    summary::after{
-                        right: 1vw;
-                        width:4vw; height: 2vw;
-                        background-size: 5vw 3vw;
-                    }
-                    p{line-height: 6vw;font-size: 3vw; width: 90%;}
-                }
+    p{
+        font-size: 1rem;
+        letter-spacing: .2rem;
+        margin-bottom: 2rem;
+    }
+    h1{
+        font-size: 2.1rem;
+        width: 30rem;
+    }
+    .Stay_form{
+        margin-top: 2.5rem;
+        input{
+            margin-right: .5rem;
+            width:19rem;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            padding: 0 1rem;
+            height:3rem;
+            border-radius:.5rem;
+
+            &::placeholder{
+                color: hsl(229, 8%, 60%);
             }
-            
         }
         button{
-            width: 25vw;
-            height:8vw;
-            font-size: 3vw;
+            width:8rem;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            padding: 0 1rem;
+            height:3rem;
+            background-color: hsl(0, 94%, 66%);
+            color:white;
+            border-radius:.5rem;
         }
     }
 }
+
 @media only screen and (max-width: 500px){
-    .Frequently{
-        width:100%;
-        h1{
-            font-size: 10vw;
-            color:hsl(229, 31%, 21%);
-        }
-        p{line-height: 6vw;font-size: 4vw; width: 90%;}
-        .Frequently_list{
-            width:90%;
-    
-            .Frequently_item{
-                details{
-                    width:100%;
-                    summary{
-                        width:90vw;
-                        font-size: 4.5vw;
-    
-                    }
-                    summary::after{
-                        right: 1vw;
-                        width:5vw; height: 3vw;
-                        background-size: 5vw 3vw;
-                    }
-                    p{line-height: 6vw;font-size: 4vw; width: 90%;}
-                }
-            }
-            
-        }
-        button{
-            width: 35vw;
-            height:13vw;
-            font-size: 4vw;
-        }
-    }
+    .Stay{margin-top: 15vw;padding:10vw 0;
+        p{margin-bottom: 5vw;font-size: 4vw;}
+        h1{width: 90vw;font-size: 6vw;}
+        .Stay_form{margin-top: 5vw;
+            input{margin-right: 2vw;width:60vw;padding: 0 2.5vw;}
+            button{width:28vw;padding: 0 2vw;font-size: 3.5vw;}}}
 }
