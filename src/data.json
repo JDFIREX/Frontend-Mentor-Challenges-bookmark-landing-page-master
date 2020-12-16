@@ -91,7 +91,7 @@
     },
     "Footer" : {
         "Footer_header" : "BOOKMARK",
-        "Footer_img" : "images/logo-bookmark.svg",
+        "Footer_img" : "images/logo-bookmark-white.svg",
         "Footer_info" : ["FEATURES","PRICING","CONTACT"],
         "Footer_media" : {
             "media_fb" : "images/icon-facebook.svg",
