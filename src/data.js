@@ -2,8 +2,10 @@ class GetData {
     async setData() {
         return await  fetch("./src/data.json").then(resolve => resolve.json());
     }
+
     constructor(data){
         this.data = this.setData()
+        this.nav;
     }
     async Nav(){
         return await this.data.then(r => r.Nav);

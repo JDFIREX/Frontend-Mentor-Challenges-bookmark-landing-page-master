@@ -1,8 +1,10 @@
 import { NavJSON } from "./data.js"
+import { gsap } from './../node_modules/gsap/index.js';
 
 let NavDiv = document.createElement("div");
     NavDiv.classList.add("Nav")
 let NavOpen = false;
+
 
 NavJSON.then(r => {
     NavDiv.innerHTML = `
@@ -14,6 +16,8 @@ NavJSON.then(r => {
         </div>
         <div class="Nav_humb">
             <img src=${r.nav_humb} alt="humb" class="humb_img">
+            <div class="fb"></div>
+            <div class="tw"></div>
         </div>
         `
 }).then(result => {
@@ -68,24 +72,38 @@ function ShowNav(n1,NavList,NavOpen,LogoImg,e){
             })
         }
     })
+    n1.to(".fb",.2,{
+        display: "block"
+    })
+    n1.to(".tw",.2,{
+        display: "block"
+    })
     n1.to(".list_b",{
         duration: .02,
         opacity : 1
     })
     n1.from(".list_b",{
-        duration: .1,
+        duration: .05,
         y : 500
     })
+    
     setTimeout(() => {
         LogoImg.src = "../images/logo-bookmark-white.svg";
         e.path[0].src = "../images/icon-close.svg"
     }, 250);
 }
+
 function CloseNav(n1,NavList,NavOpen,LogoImg,e){
     n1.to(".list_b",{
         duration: .1,
         opacity : 0,
         y : 500 
+    })
+    n1.to(".fb",.2,{
+        display: "none"
+    })
+    n1.to(".tw",.2,{
+        display: "none"
     })
     document.querySelectorAll('.list_p').forEach((l,b) => {
         if(b == NavList.childElementCount - 2){
@@ -110,7 +128,7 @@ function CloseNav(n1,NavList,NavOpen,LogoImg,e){
     setTimeout(() => {
         LogoImg.src = "../images/logo-bookmark.svg";
         e.path[0].src = "../images/icon-hamburger.svg"
-    }, 550);
+    }, 1000);
     document.querySelectorAll('.list_p').forEach((l,b) => {
         n1.to(l, .1,{
             x : 0

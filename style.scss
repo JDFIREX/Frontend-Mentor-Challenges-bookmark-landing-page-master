@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
+}
+html{
+    overflow-x: hidden;
 }
 body{
     font-size: 18px;
@@ -12,20 +16,13 @@ body{
     height: 100%;
     
 }
-.design{
-    position: absolute;
-    top: 0; left: 0;
-    width:100%;
-    opacity: .8;
-    display: none;
-}
-
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 .root{
     position: relative;
     top: 0; left: 0;
     width:100%;
 }
-
 .Nav{
     position: relative;
     padding: 3.5rem 11.5vw 0rem 12vw;
@@ -42,6 +39,11 @@ body{
             margin-left: 2.75rem;
             letter-spacing: .1rem;
             color:hsl(229, 8%, 60%);
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover{
+                color: hsl(0, 94%, 66%);
+            }
         }
         .list_b{
             width:7rem;
@@ -50,15 +52,27 @@ body{
             text-decoration: 0;
             background-color: hsl(0, 94%, 66%);
             color:white;
-            border:1px solid red;
             border-radius:.3rem;
             font-size: .9rem;
             margin-left: 3rem;
             height:2.5rem;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover{
+                color: hsl(0, 94%, 66%);
+                border:1px solid hsl(0, 94%, 66%);
+                background-color: white;;
+            }
         }
     }
     .Nav_humb{
         display: none;
+        .fb{
+            display: none;
+        }
+        .tw{
+            display: none;
+        }
     }
 }
 
@@ -67,15 +81,43 @@ body{
 }
 @media only screen and (max-width: 850px){
     .Nav{
-        .logo{position: relative;z-index: 2;
+        .logo{position: relative;z-index: 200000000000;
             img{width:16rem;}
         }
-        .Nav_list{opacity: 0;position: fixed;padding: 8rem 0 0 0;top:-50rem; left: 0;width:100%;height: 120vh;flex-direction: column;align-items: center;background-color: hsla(229, 31%, 21%, 0.904);
+        .Nav_list{opacity: 0;position: fixed;z-Index:2000000000;padding: 8rem 0 0 0;top:-50rem; left: 0;width:100%;height: 120vh;flex-direction: column;align-items: center;background-color: hsla(229, 31%, 21%, 0.904);
             .list_p{font-size: 1.6rem;margin-left: 0rem;width:calc(100% - 24vw);padding: 1.8rem 0;text-align: center;border-top:1px solid hsla(229, 8%, 60%, 0.452);color:white;}
             .list_p:nth-child(3){border-bottom:1px solid hsla(229, 8%, 60%, 0.452);}
             .list_b{margin-top: 1.8rem;width: 0; height: 0;margin-left: 0;padding: 2rem 10rem;display: flex;font-size: 1.6rem;align-items: center;justify-content: center;background-color: transparent;border: 2px solid white;}}
-        .Nav_humb{position: relative;z-index: 2;display: block;margin-left: auto;margin-top: .5rem;
-            img{width:2rem;}}}
+        .Nav_humb{position: relative;z-index: 2000000000;display: block;margin-left: auto;margin-top: .5rem;
+            img{width:2rem;}
+            .fb{
+                position: absolute;
+                bottom: -80vh;
+                right: 50vw;
+                width:2.5rem;height:2.5rem;
+                background-image: url("./images/icon-facebook.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                z-index: 2000000000;
+                &:hover{
+                    background-image: url("./images/icon-facebook-red.svg");
+                }
+            }
+            .tw{
+                position: absolute;
+                bottom: -80vh;
+                right: 35vw;
+                width:2.5rem;height:2.5rem;
+                background-image: url("./images/icon-twitter.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                z-index: 200000000000;
+                &:hover{
+                    background-image: url("./images/icon-twitter-red.svg");
+                }
+            }}}
 }
 @media only screen and (max-width: 550px){
     .Nav{
@@ -136,11 +178,25 @@ body{
                 outline: 0;
                 color:white;
                 background-color: hsl(231, 69%, 60%);
+                cursor:pointer;
+                transition: .3s ease-in-out;
+                &:hover{
+                    color: hsl(231, 69%, 60%);
+                    border: 1px solid hsl(231, 69%, 60%);
+                    background-color: white;;
+                }
             }
             .b_firefox{
                 margin-left: 1rem;
                 color: hsl(229, 31%, 21%);
                 background-color: rgb(247, 247, 247);
+                cursor:pointer;
+                transition: .3s ease-in-out;
+                &:hover{
+                    color: hsl(229, 31%, 21%);
+                    border: 1px solid hsl(229, 31%, 21%);
+                    background-color: white;;
+                }
             }
         }
     }
@@ -251,6 +307,11 @@ body{
                 padding:.5rem  0 .6rem 0;
                 font-size: 1.1rem;
                 color:hsl(229, 31%, 21%);
+                cursor:pointer;
+                transition: .3 ease-in-out;
+                &:hover{
+                    color:hsl(0, 94%, 66%);
+                }
             }
         }
         .menu_scroll{
@@ -455,6 +516,13 @@ body{
                 background-color: hsl(231, 69%, 60%);
                 border-radius: .5rem;
                 margin-bottom: 1rem;
+                cursor:pointer;
+                transition: .3 ease-in-out;
+                &:hover{
+                    color:hsl(231, 69%, 60%);
+                    border:1px solid hsl(231, 69%, 60%);
+                    background-color: white;
+                }
             }
         }
     }
@@ -523,6 +591,12 @@ body{
                     text-decoration: none;
                     outline: none;
                     padding: 1.4rem 2rem 1.4rem .5rem;
+                    color: hsl(229, 31%, 21%);
+                    cursor:pointer;
+                    transition:all .3 ease-in-out;
+                    &:hover{
+                        color: #fa5757;
+                    }
 
                 }
                 summary::after{
@@ -534,6 +608,7 @@ body{
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: 1.4rem .9rem;
+                    transition:all .3 ease-in-out;
                 }
                 p{
                     margin-top:1rem;
@@ -548,7 +623,12 @@ body{
             details summary::-webkit-details-marker {
                 display:none;
             }
-
+            details[open]{
+                summary::after{
+                    background-image: url("./images/icon-arrow-red.svg");
+                    transform: rotate(180deg);
+                }
+            }
             &:nth-child(1){
                 details{
                     border-top: 1px solid hsl(229, 8%, 60%);
@@ -606,6 +686,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     
     p{
         font-size: 1rem;
@@ -617,8 +698,10 @@ body{
         width: 30rem;
     }
     .Stay_form{
+        position: relative;
         margin-top: 2.5rem;
         input{
+            position: relative;
             margin-right: .5rem;
             width:19rem;
             outline: none;
@@ -627,11 +710,31 @@ body{
             padding: 0 1rem;
             height:3rem;
             border-radius:.5rem;
+            z-index: 200000000; // 1
 
             &::placeholder{
                 color: hsl(229, 8%, 60%);
             }
+            
         }
+        
+        .error{
+            position: absolute;
+            height: 5rem;
+            width: calc(19rem + 4px);
+            display: flex;
+            align-items: flex-end;
+            color:white;
+            background: #fa5757;
+            border-radius: .5rem;
+            top: -2px;
+            left: -2px;
+            padding-left:.5rem;
+            padding-bottom: .5rem;
+            font-size: .7rem;
+            opacity: 0;
+        }
+        
         button{
             width:8rem;
             outline: none;
@@ -642,7 +745,27 @@ body{
             background-color: hsl(0, 94%, 66%);
             color:white;
             border-radius:.5rem;
+            position: relative;
+            cursor:pointer;
+            &:hover{
+                color: #fa5757;
+                background-color:white;
+                border:2px solid #fa5757;
+            }
         }
+    }
+    .Stay_form::after{
+        content: '';
+        position: absolute;
+        top: .75rem;
+        right: 10rem;
+        width: 1.5rem;
+        height:50%;
+        background-image: url("./images/icon-error.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        z-index: 2;
     }
 }
 
@@ -652,7 +775,9 @@ body{
         h1{width: 90vw;font-size: 6vw;}
         .Stay_form{margin-top: 5vw;
             input{margin-right: 2vw;width:60vw;padding: 0 2.5vw;}
+            .error{width: calc(60vw + 4px);font-size: 2vw;}
             button{width:28vw;padding: 0 2vw;font-size: 3.5vw;}}}
+        .Stay_form::after{right: 30vw;}
 }
 
 .Footer{
@@ -674,6 +799,10 @@ body{
             font-size: .95rem;
             color:white;
             padding-right: 3rem;
+            cursor:pointer;
+            &:hover{
+                color: #fa5757;
+            }
         }
     }
     .Footer_media{
@@ -689,6 +818,9 @@ body{
             background-position: center;
             background-repeat: no-repeat;
             background-size: 100% 100%;
+            &:hover{
+                background-image: url("./images/icon-facebook-red.svg");
+            }
         }
         .media_tw{
             width:1.5rem;height:1.5rem;
@@ -696,6 +828,9 @@ body{
             background-position: center;
             background-repeat: no-repeat;
             background-size: 100% 100%;
+            &:hover{
+                background-image: url("./images/icon-twitter-red.svg");
+            }
         }
     }
 }

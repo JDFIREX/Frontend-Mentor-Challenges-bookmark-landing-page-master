@@ -4,7 +4,6 @@ let FooterDIV = document.createElement('div');
     FooterDIV.classList.add("Footer")
 
 FooterJSON.then(r => {
-    console.log(r)
     FooterDIV.innerHTML = `
         <img src=${r.Footer_img} alt=${r.Footer_header}>
         <div class="Footer_list">
