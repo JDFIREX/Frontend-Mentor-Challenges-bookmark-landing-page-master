@@ -1,4 +1,5 @@
 import { StayJSON } from "./data.js"
+import { gsap } from './../node_modules/gsap/index.js';
 
 let StayDIV = document.createElement("div");
     StayDIV.classList.add("Stay")
@@ -15,6 +16,8 @@ StayJSON.then(r => {
     `
 }).then(r => {
     document.querySelector(".stay_btn").addEventListener('click', (e) => SubmitEmail(e));
+}).then(r => {
+    load()
 })
 
 function SubmitEmail(e){
@@ -33,5 +36,36 @@ function showError(){
     document.querySelector(".stay_email").style.zIndex = "1";
     document.querySelector(".error").style.opacity = "1";
 }
+
+function load(){
+    let gl = gsap.timeline({defaults: {ease: "Power2.inOut"}});
+    showStay(gl)
+}
+
+function showStay(gl){
+    gl.from(".Stay_form",.5,{
+        delay: 1.5,
+        y:-100,
+        opacity: 0,
+        scale: 0,
+        rotate: 1000
+    })
+    gl.from(".stay_btn", .5,{
+        width: 0,
+        x: -200,
+        opacity: 0
+    })
+    gl.from(".Stay_h",.3,{
+        x:-500,
+        opacity: 0,
+        fontSize: 0
+    },"-=1.2")
+    gl.from(".Stay_p",.3,{
+        x:500,
+        opacity: 0,
+        scale: 3
+    },"-=1.5")
+}
+
 
 export let Stay = StayDIV;

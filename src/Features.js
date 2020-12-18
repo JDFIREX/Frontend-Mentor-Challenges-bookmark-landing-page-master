@@ -131,11 +131,11 @@ function ShowFeatures(gl){
     gl.from(".Item_img", .6,{
         x: -1000,
         opacity: 0
-    },"-=.5")
+    },"-=.7")
     gl.from(".Item_info", .8,{
         y: 200,
         opacity: 0
-    },"-=.3")
+    },"-=.6")
 }
 
 export let Features = FeaturesDIV

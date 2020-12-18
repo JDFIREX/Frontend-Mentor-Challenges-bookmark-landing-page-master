@@ -43,7 +43,7 @@ function load(){
 
 function showDownloads(gl){
     gl.from(".Download_h",.3,{
-        delay:1.5,
+        delay:.5,
         y:200,
         opacity: 0
     })

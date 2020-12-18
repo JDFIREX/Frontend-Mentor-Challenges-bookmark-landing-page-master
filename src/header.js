@@ -31,21 +31,22 @@ function load(){
 
 function ShowHeader(gl){
     gl.from(".welcome_h", .3, {
-        x: -1000
+        x: -1000,
+        delay:.5
     })
     gl.from(".welcome_p", .3, {
         x: -1000
-    },"-=.15")
+    },"-=.05")
     gl.from(".welcome_b", .3, {
         y: 100,
         opacity: 0
-    },"-=.15")
+    },"-=.05")
     gl.from(".welcome_img", .5, {
         x: 1000
-    },"-=.3")
+    },"-=.9")
     gl.from(".Header_bg", .3,{
         width: "0"
-    }, "-=.6")
+    }, "-=1")
 }
 
 

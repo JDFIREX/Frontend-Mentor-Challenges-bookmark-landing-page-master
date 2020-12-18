@@ -41,22 +41,20 @@ function HideNav(gl){
     })
 }
 function AnimateNav(gl){
-    setTimeout(() => {
         gl.to(".logo",.5,{
-            delay: -.6,
+            delay: 0,
             marginTop: "0",
             opacity: 1
         })
-    }, 20);
     document.querySelectorAll(".list_p").forEach(p => {
         gl.to(p, .3,{
-            delay: 0,
+            delay: -.25,
             marginTop: "0",
             opacity: 1,
         })
     })
     gl.to('.list_b',.5,{
-        delay: -1,
+        delay: -.8,
         marginRight: "0",
     })
 }
