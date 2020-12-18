@@ -1,5 +1,5 @@
 import { HeaderJSON } from "./data.js"
-import { gsap } from './../node_modules/gsap/index.js';
+// import { gsap } from './../node_modules/gsap/index.js';
 
 let HeaderDIV = document.createElement("div");
     HeaderDIV.classList.add("Header");

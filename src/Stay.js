@@ -1,5 +1,5 @@
 import { StayJSON } from "./data.js"
-import { gsap } from './../node_modules/gsap/index.js';
+// import { gsap } from './../node_modules/gsap/index.js';
 
 let StayDIV = document.createElement("div");
     StayDIV.classList.add("Stay")

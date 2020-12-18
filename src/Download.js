@@ -1,5 +1,5 @@
 import { DownloadJSON } from "./data.js"
-import { gsap } from './../node_modules/gsap/index.js';
+// import { gsap } from './../node_modules/gsap/index.js';
 
 let DownloadDIV = document.createElement("div");
     DownloadDIV.classList.add("Download");

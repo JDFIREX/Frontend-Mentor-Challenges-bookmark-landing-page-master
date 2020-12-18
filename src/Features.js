@@ -1,5 +1,5 @@
 import { FeaturesJSON } from "./data.js"
-import { gsap } from './../node_modules/gsap/index.js';
+// import { gsap } from './../node_modules/gsap/index.js';
 
 let FeaturesDIV = document.createElement("div");
     FeaturesDIV.classList.add("Features")

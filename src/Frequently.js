@@ -1,5 +1,5 @@
 import { FrequentlyJSON } from "./data.js"
-import { gsap } from './../node_modules/gsap/index.js';
+// import { gsap } from './../node_modules/gsap/index.js';
 
 let FrequentlyDIV = document.createElement("div");
     FrequentlyDIV.classList.add("Frequently")
