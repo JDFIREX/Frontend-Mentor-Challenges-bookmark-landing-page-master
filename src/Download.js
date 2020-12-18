@@ -1,4 +1,5 @@
 import { DownloadJSON } from "./data.js"
+import { gsap } from './../node_modules/gsap/index.js';
 
 let DownloadDIV = document.createElement("div");
     DownloadDIV.classList.add("Download");
@@ -31,7 +32,34 @@ DownloadJSON.then(r => {
             </div>
         </div>
     `
+}).then(r => {
+    load()
 })
+
+function load(){
+    let gl = gsap.timeline({defaults: {ease: "Power2.inOut"}});
+    showDownloads(gl)
+}
+
+function showDownloads(gl){
+    gl.from(".Download_h",.3,{
+        delay:1.5,
+        y:200,
+        opacity: 0
+    })
+    gl.from(".Download_p",.3,{
+        x:200,
+        opacity: 0
+    })
+    document.querySelectorAll(".s_item").forEach((s,b) => {
+        gl.from(s,.4,{
+            y: -1 * (50 * (b + 1)),
+            opacity: 0
+        })
+    })
+}
+
+
 
 
 export let Download = DownloadDIV

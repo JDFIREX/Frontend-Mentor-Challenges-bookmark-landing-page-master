@@ -22,9 +22,44 @@ NavJSON.then(r => {
         `
 }).then(result => {
     document.querySelector(".humb_img").addEventListener("click", (e) => OpenNav(e))
+    load()
 })
 
+function load(){
+    let gl = gsap.timeline({defaults: {ease: "Power2.inOut"}});
+    HideNav(gl)
+    AnimateNav(gl)
+    
+}
 
+function HideNav(gl){
+    document.querySelector(".logo").style.marginTop = "-100vw";
+    document.querySelector(".list_b").style.marginRight = "-100vw";
+    document.querySelectorAll('.list_p').forEach(p => {
+        p.style.opacity = "0"
+        p.style.marginTop = "-100vw";
+    })
+}
+function AnimateNav(gl){
+    setTimeout(() => {
+        gl.to(".logo",.5,{
+            delay: -.6,
+            marginTop: "0",
+            opacity: 1
+        })
+    }, 20);
+    document.querySelectorAll(".list_p").forEach(p => {
+        gl.to(p, .3,{
+            delay: 0,
+            marginTop: "0",
+            opacity: 1,
+        })
+    })
+    gl.to('.list_b',.5,{
+        delay: -1,
+        marginRight: "0",
+    })
+}
 
 function Nav_list(r){
     let list = "";

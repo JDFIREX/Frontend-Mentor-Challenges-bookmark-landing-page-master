@@ -8,11 +8,10 @@ import * as Footer from "/src/Footer.js"
 
 let root = document.querySelector('.root')
 
-
-root.appendChild(Nav.Nav);
-root.appendChild(Header.Header);
-root.appendChild(Features.Features);
-root.appendChild(Download.Download);
-root.appendChild(Frequently.Frequently);
-root.appendChild(Stay.Stay);
-root.appendChild(Footer.Footer);
+    root.appendChild(Nav.Nav);
+    root.appendChild(Header.Header);
+    root.appendChild(Features.Features);
+    root.appendChild(Download.Download);
+    root.appendChild(Frequently.Frequently);
+    root.appendChild(Stay.Stay);
+    root.appendChild(Footer.Footer);

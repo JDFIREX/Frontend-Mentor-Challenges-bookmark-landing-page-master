@@ -43,6 +43,7 @@ FeaturesJSON.then(r => {
     items.push([r.Features_Easy_Sharing.Sharing_header,r.Features_Easy_Sharing.Sharing_p,r.Features_Easy_Sharing.Sharing_btn])
 }).then(r => {
     document.querySelectorAll(".menu_item").forEach(m => m.addEventListener('click', (e) => ChangeItem(e)));
+    load()
 })
 
 function ChangeItem(e){
@@ -106,7 +107,35 @@ function ShowMenu(){
 }
 
 
+function load(){
+    let gl = gsap.timeline({defaults: {ease: "Power2.inOut"}});
+    ShowFeatures(gl);
+}
 
-
+function ShowFeatures(gl){
+    gl.from('.Features_h',.3,{
+        delay: .2,
+        x:-500,
+        opacity:0
+    })
+    gl.from('.Features_p',.3,{
+        x:500,
+        opacity:0
+    },"-=.3")
+    document.querySelectorAll(".menu_item").forEach(i => {
+        gl.from(i,.3,{
+            y:-100,
+            opacity: 0
+        })
+    })
+    gl.from(".Item_img", .6,{
+        x: -1000,
+        opacity: 0
+    },"-=.5")
+    gl.from(".Item_info", .8,{
+        y: 200,
+        opacity: 0
+    },"-=.3")
+}
 
 export let Features = FeaturesDIV
