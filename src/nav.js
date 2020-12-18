@@ -1,5 +1,5 @@
 import { NavJSON } from "./data.js"
-import { gsap } from './../node_modules/gsap/index.js';
+// import { gsap } from './../node_modules/gsap/index.js';
 
 let NavDiv = document.createElement("div");
     NavDiv.classList.add("Nav")
