@@ -123,6 +123,9 @@ function ShowNav(n1,NavList,NavOpen,LogoImg,e){
     setTimeout(() => {
         LogoImg.src = "../images/logo-bookmark-white.svg";
         e.path[0].src = "../images/icon-close.svg"
+        LogoImg.style.position = "fixed";
+        e.path[0].style.position = "fixed";
+        e.path[0].style.right = "5vw";
     }, 250);
 }
 
@@ -161,6 +164,9 @@ function CloseNav(n1,NavList,NavOpen,LogoImg,e){
     setTimeout(() => {
         LogoImg.src = "../images/logo-bookmark.svg";
         e.path[0].src = "../images/icon-hamburger.svg"
+        LogoImg.style.position = "relative";
+        e.path[0].style.position = "relative";
+        e.path[0].style.right = "0vw";
     }, 1000);
     document.querySelectorAll('.list_p').forEach((l,b) => {
         n1.to(l, .1,{
